@@ -114,7 +114,7 @@ div#divsearch {
     gap: 5px;
 }
 .search-content-CBHPM { 
-    width: 500px;
+    width: 100%;
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;

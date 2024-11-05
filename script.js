@@ -23,7 +23,7 @@ fetch("./data/tabela_22.json")
   .then((data) => data.json())
   .then((users) => {
     users.forEach((user) => {
-      addHTML(user.codigo + " " +user.procedimento);
-      items.push(user.codigo + " " + user.procedimento);
+      addHTML(user.codigo + " - " +user.procedimento);
+      items.push(user.codigo + " - " + user.procedimento);
     });
   });
