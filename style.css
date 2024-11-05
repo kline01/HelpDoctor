@@ -1,0 +1,146 @@
+a {
+    text-decoration: none;
+}
+.Nav-Containter { 
+    display: flex;
+    justify-content: space-between;
+    background-color: initial;
+    padding-left: 10px;
+    padding-top: 0px;
+    border-bottom: 1px white solid;
+    box-shadow:#fff;
+    height: 70px;
+
+}
+.Nav-Containter h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:lighter;
+    font-style: normal;
+}
+div#Logo-Container {
+    display:flex;
+    flex-direction: row;
+}
+nav#Nav-Menu ul {
+    padding-top: 3%;
+    
+}
+nav#Nav-Menu li { 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
+
+}
+nav#Nav-Menu h1 {
+    display: none;
+}
+
+.Label-Container {
+    background-image: linear-gradient(to right,#095a76, #3acc8a);
+    display: flex;
+    justify-content:end;
+    padding: 100px 50px 100px 50px;
+    color: white;
+}
+.Label-Container-texts { 
+    position: relative;
+    flex-direction: column;
+    padding: 0px 250px 0px 100px;
+}
+.Label-Container-texts h3 {
+    font-family: "Roboto-Condensed", sans-serif;
+    font-size: 25px;
+}
+.Label-Container-texts h2 {
+    font-family: "Roboto-Condensed", sans-serif;
+    font-size: 40px;
+    padding-bottom: 0%;
+}
+.Label-Container-texts p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 30px;
+}
+
+.right-image{
+    padding-top: 150px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.button {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 8px; /* Bordas ligeiramente arredondadas */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 1.0s; /* Transição suave para o efeito hover */
+  }
+  
+  .button:hover {
+    background-color: #fff; /* Fundo branco ao passar o mouse */
+    color: #3acc8a; /* Mantém a cor da fonte */
+  }
+
+
+/* estilos da página CBHPM */
+
+.CBHPM {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+div#full-height-div { 
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+div#containercontentcbhpm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+div#divsearch {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.search-content-CBHPM { 
+    width: 500px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 8px; /* Bordas ligeiramente arredondadas */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 1.0s; /* Transição suave para o efeito hover */
+    font-family: "Montserrat", sans-serif;}
+.search-content-CBHPM:hover { 
+    background-color: #fff; /* Fundo branco ao passar o mouse */
+    color: #3acc8a; /* Mantém a cor da fonte */
+
+}
+div#divsearch label {
+    padding-right: 15px;
+}
+.content { 
+    width: auto;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 8px; /* Bordas ligeiramente arredondadas */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 1.0s; /* Transição suave para o efeito hover */
+    font-family: "Montserrat", sans-serif;
+}
