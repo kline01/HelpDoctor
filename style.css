@@ -35,6 +35,19 @@ nav#Nav-Menu li {
     padding: 20px;
 
 }
+@media screen and (max-width: 1024) {
+    nav#Nav-Menu li { 
+        
+        font-optical-sizing: auto;
+        font-weight: normal;
+        list-style-type: none;
+        display: inline;
+        padding: 20px;
+    
+    }
+    
+    
+}
 nav#Nav-Menu h1 {
     display: none;
 }
@@ -42,9 +55,15 @@ nav#Nav-Menu h1 {
 .Label-Container {
     background-image: linear-gradient(to right,#095a76, #3acc8a);
     display: flex;
+    flex-direction: row;
     justify-content:end;
     padding: 100px 50px 100px 50px;
     color: white;
+}
+@media screen and (max-width: 1440px) {
+    .Label-Container {
+        flex-direction: column; /* Itens em coluna */
+    }
 }
 .Label-Container-texts { 
     position: relative;
@@ -64,11 +83,41 @@ nav#Nav-Menu h1 {
     font-family: "Nunito Sans", sans-serif;
     font-size: 30px;
 }
+@media screen and (max-width: 1024px) {
+    .Label-Container-texts h3 {
+        font-size: 20px;  /* Diminuir o tamanho do h3 */
+    }
+    
+    .Label-Container-texts h2 {
+        font-size: 30px;  /* Diminuir o tamanho do h2 */
+    }
+    
+    .Label-Container-texts p {
+        font-size: 22px;  /* Diminuir o tamanho do parágrafo */
+    }
+}
 
+@media screen and (max-width: 768px) {
+    .Label-Container-texts h3 {
+        font-size: 18px;  /* Diminuir o tamanho do h3 */
+    }
+    
+    .Label-Container-texts h2 {
+        font-size: 26px;  /* Diminuir o tamanho do h2 */
+    }
+    
+    .Label-Container-texts p {
+        font-size: 18px;  /* Diminuir o tamanho do parágrafo */
+    }
+}
 .right-image{
-    padding-top: 150px;
+    padding-top: 50px;
     padding-left: 0px;
-    padding-right: 0px;
+    padding-right: 50px;
+}
+.right-image img {
+    max-width: auto;
+    
 }
 .button {
     color: #fff;
