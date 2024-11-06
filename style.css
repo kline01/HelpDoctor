@@ -45,11 +45,16 @@ nav#Nav-Menu li {
         padding: 20px;
     
     }
-    
-    
 }
+
 nav#Nav-Menu h1 {
     display: none;
+}
+@media screen and (max-width: 959) {
+    nav#Nav-Menu li {
+        color: white;
+    }
+    
 }
 
 .Label-Container {
@@ -69,6 +74,22 @@ nav#Nav-Menu h1 {
     position: relative;
     flex-direction: column;
     padding: 0px 250px 0px 100px;
+}
+@media screen and (max-width: 750) {
+    .Label-Container-texts { 
+        position: relative;
+        flex-direction: column;
+        padding: auto;
+    }
+    .Label-Container {
+        background-image: linear-gradient(to right,#095a76, #3acc8a);
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        padding: 2px;
+        color: white;
+    }
+    
 }
 .Label-Container-texts h3 {
     font-family: "Roboto-Condensed", sans-serif;
@@ -116,9 +137,15 @@ nav#Nav-Menu h1 {
     padding-right: 50px;
 }
 .right-image img {
-    max-width: auto;
-    
+    max-width: auto; 
 }
+
+@media screen and (max-width: 768px) {
+    .right-image img {
+        max-width: 95%;
+    }
+}
+
 .button {
     color: #fff;
     background-color: transparent;
