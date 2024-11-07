@@ -1,5 +1,11 @@
 const content = document.querySelector(".content");
 const inputSearch = document.querySelector("input[type='search']");
+const offScreenMenu = document.querySelector('.off-screen-menu');
+const hamMenu = document.querySelector(".ham-menu");
+hamMenu.addEventListener('click', () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle('active');
+})
 
 let items = [];
 

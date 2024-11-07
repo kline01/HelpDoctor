@@ -3,8 +3,10 @@ a {
 }
 .Nav-Containter { 
     display: flex;
-    justify-content: space-between;
-    background-color: initial;
+    flex-direction: row;
+
+    justify-content:space-between;
+    background-color: white;
     padding-left: 10px;
     padding-top: 0px;
     border-bottom: 1px white solid;
@@ -22,18 +24,73 @@ div#Logo-Container {
     display:flex;
     flex-direction: row;
 }
-nav#Nav-Menu ul {
+.off-screen-menu ul {
     padding-top: 3%;
     
 }
-nav#Nav-Menu li { 
+.off-screen-menu li { 
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     list-style-type: none;
-    display: inline;
-    padding: 20px;
+    display:block;
+    padding: 5px;
 
+}
+/* formatação do ham-menu */
+.ham-menu  {
+    height: 50px;
+    width: 50px;
+    position: relative;
+
+}
+.ham-menu span {
+        height: 5px;
+        width: 100%;
+        background-color: #3acc8a;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3 ease;
+        
+    }
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50px;
+    background-color: #fff;
+    transform: 
+        translate(-50%,-50%)
+        rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0%;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50px;
+    background-color: #fff;
+    transform: 
+        translate(-50%, -50%)
+        rotate(-45deg);
+}
+.off-screen-menu {
+    position: fixed;
+    top: 0%;
+    right: -75%;
+    background-color:#3acc8a;
+    height: 100vh;
+    width: 75%;
+    transition: right .5s;
+}
+.off-screen-menu.active {
+    right: -45%;
 }
 @media screen and (max-width: 1024) {
     nav#Nav-Menu li { 
@@ -47,16 +104,10 @@ nav#Nav-Menu li {
     }
 }
 
-nav#Nav-Menu h1 {
-    display: none;
-}
+
 @media screen and (max-width: 959) {
-    nav#Nav-Menu li {
-        color: white;
-    }
     
 }
-
 .Label-Container {
     background-image: linear-gradient(to right,#095a76, #3acc8a);
     display: flex;
