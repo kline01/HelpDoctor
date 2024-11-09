@@ -85,10 +85,10 @@ div#Logo-Container {
         rotate(-45deg);
 }
 .off-screen-menu {
-    position: fixed;
+    position:absolute;
     height:100px;
     top: -100%;
-    left: 0;
+    left: 50%;
     background-color:white;
     height:min-content;
     width: 100%;
@@ -319,6 +319,7 @@ div#full-height-div {
 div#containercontentcbhpm {
     display: flex;
     flex-direction: column;
+    width: 85%;
     gap: 20px;
 }
 div#divsearch {
@@ -326,6 +327,7 @@ div#divsearch {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    
 }
 .search-content-CBHPM { 
     width: 100%;
@@ -377,7 +379,7 @@ div#divsearch label {
     background-color: #fff;
     border-radius: 10px;
     color: black;
-    padding-left: 15px;
+    padding: 15px;
 }
 .service-discription h3 p {
     text-align:justify;
