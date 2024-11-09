@@ -26,11 +26,13 @@ div#Logo-Container {
 }
 .off-screen-menu ul {
     padding-top: 3%;
+    padding-left: 0;
+    
     
 }
 .off-screen-menu li { 
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
+    font-optical-sizing: 2px;
     font-weight: normal;
     list-style-type: none;
     display:block;
@@ -64,8 +66,9 @@ div#Logo-Container {
     top: 75%;
 }
 .ham-menu.active span:nth-child(3) {
-    top: 50px;
-    background-color: #fff;
+    top: 25px;
+    width: 50%;
+    background-color:#3acc8a;
     transform: 
         translate(-50%,-50%)
         rotate(45deg);
@@ -74,23 +77,26 @@ div#Logo-Container {
     opacity: 0%;
 }
 .ham-menu.active span:nth-child(1) {
-    top: 50px;
-    background-color: #fff;
+    top: 25px;
+    width: 50%;
+    background-color:#3acc8a;
     transform: 
         translate(-50%, -50%)
         rotate(-45deg);
 }
 .off-screen-menu {
     position: fixed;
-    top: 0%;
-    right: -75%;
-    background-color:#3acc8a;
-    height: 100vh;
-    width: 75%;
-    transition: right .5s;
+    height:100px;
+    top: -100%;
+    left: 0;
+    background-color:white;
+    height:min-content;
+    width: 100%;
+    transition: top .5s;
+    z-index: 10;
 }
 .off-screen-menu.active {
-    right: -45%;
+    top: 60px;
 }
 @media screen and (max-width: 1024) {
     nav#Nav-Menu li { 
@@ -108,6 +114,34 @@ div#Logo-Container {
 @media screen and (max-width: 959) {
     
 }
+
+#banner {
+    height: 100vh;
+    background-color:  #07bd266c;
+    background-blend-mode: multiply;
+    background-image: url("imagens/banner.png");
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+}
+.banner-discription { 
+    display: block;
+    color: white;
+    font-family: "Nunito Sans";
+    width: 50%;
+    top: 50%;
+}
+.banner-discription h2 {
+    font-size:medium;
+}
+.div-banner{
+    position: absolute;
+    top:50%;
+    width: 75%;
+    padding: 30px;
+}
 .Label-Container {
     background-image: linear-gradient(to right,#095a76, #3acc8a);
     display: flex;
@@ -124,7 +158,7 @@ div#Logo-Container {
 .Label-Container-texts { 
     position: relative;
     flex-direction: column;
-    padding: 0px 250px 0px 100px;
+    padding: 0px 50px 0px 50px;
 }
 @media screen and (max-width: 750) {
     .Label-Container-texts { 
@@ -182,6 +216,59 @@ div#Logo-Container {
         font-size: 18px;  /* Diminuir o tamanho do parágrafo */
     }
 }
+
+
+@media screen and (max-width: 425px) {
+    .Label-Container-texts h3 {
+        font-size: 16px;  /* Reduzindo ainda mais o h3 */
+    }
+    
+    .Label-Container-texts h2 {
+        font-size: 22px;  /* Reduzindo o h2 para se adequar a telas pequenas */
+    }
+    
+    .Label-Container-texts p {
+        font-size: 16px;  /* Ajustando o parágrafo para uma leitura confortável */
+    }
+
+    .Label-Container-texts { 
+        position: relative;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .banner-discription { 
+        width: 95%;
+        top: 50%;
+    }
+    .banner-discription h2 {
+        font-size:medium;
+    }
+    
+}
+
+@media screen and (max-width: 374px) {
+    .Label-Container-texts h3 {
+        font-size: 14px;  /* Reduzindo ainda mais o h3 */
+    }
+    
+    .Label-Container-texts h2 {
+        font-size: 20px;  /* Reduzindo o h2 para se adequar a telas pequenas */
+    }
+    
+    .Label-Container-texts p {
+        font-size: 14px;  /* Ajustando o parágrafo para uma leitura confortável */
+    }
+
+    .Label-Container-texts { 
+        position: relative;
+        flex-direction: column;
+        padding: 0px;
+    }
+    
+}
+
+
+
 .right-image{
     padding-top: 50px;
     padding-left: 0px;
@@ -270,4 +357,28 @@ div#divsearch label {
     cursor: pointer;
     transition: background-color 0.3s, color 1.0s; /* Transição suave para o efeito hover */
     font-family: "Montserrat", sans-serif;
+}
+
+.services-container {
+    background-image: linear-gradient(to right,#095a76, #3acc8a);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    
+}
+
+.service-discription {
+    font-family:"Montserrat", sans-serif;
+    display: block;
+    height: 100%;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    color: black;
+    padding-left: 15px;
+}
+.service-discription h3 p {
+    text-align:justify;
 }

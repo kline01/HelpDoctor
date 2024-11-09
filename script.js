@@ -2,10 +2,16 @@ const content = document.querySelector(".content");
 const inputSearch = document.querySelector("input[type='search']");
 const offScreenMenu = document.querySelector('.off-screen-menu');
 const hamMenu = document.querySelector(".ham-menu");
+const menuLinks = document.querySelector(".services-click");
 hamMenu.addEventListener('click', () => {
   hamMenu.classList.toggle("active");
   offScreenMenu.classList.toggle('active');
+
 })
+menuLinks.addEventListener('click', () => {
+    hamMenu.classList.remove("active");
+    offScreenMenu.classList.remove('active');
+  });
 
 let items = [];
 
@@ -33,3 +39,5 @@ fetch("./data/tabela_22.json")
       items.push(user.codigo + " - " + user.procedimento);
     });
   });
+
+
